@@ -1,11 +1,10 @@
 from flask import Flask, request, jsonify
-from flask_cors import CORS  # <-- Import CORS
+from flask_cors import CORS  
 import torch
 import os
 from utils.image_process import preprocess_image, save_heatmap
 from utils.model_loader import load_model
 
-# Configuration
 UPLOAD_FOLDER = 'uploads/'
 HEATMAP_FOLDER = 'static/heatmaps'
 os.makedirs(UPLOAD_FOLDER, exist_ok=True)
@@ -13,7 +12,7 @@ os.makedirs(HEATMAP_FOLDER, exist_ok=True)
 
 # Initialize Flask App
 app = Flask(__name__)
-CORS(app)  # <-- Enable CORS for all routes
+CORS(app)  
 
 app.config['UPLOAD_FOLDER'] = UPLOAD_FOLDER
 
