@@ -1,0 +1,17 @@
+# Frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.env*
+
+# Backend
+backend/__pycache__/
+backend/venv/
+backend/uploads/
+backend/heatmaps/
+backend/*.png
+backend/.env
+
+.DS_Store  # macOS metadata
+Thumbs.db  # Windows thumbnail cache
+*.log      # Log files
