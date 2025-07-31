@@ -7,18 +7,36 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
-*.local
+# Dependency directories
+node_modules/
+venv/
 
-# Editor directories and files
+# Build output
+dist/
+dist-ssr/
+frontend/dist/
+backend/__pycache__/
+backend/heatmaps/
+backend/uploads/
+
+# IDE files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Environment and secret files
+.env
+backend/.env
+frontend/.env
+
+# Model weights
+*.pth
+*.pth.tar
+backend/static/*.pth
+backend/weights/*.pth
