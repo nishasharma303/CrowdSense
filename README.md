@@ -1,4 +1,4 @@
-Crowd Congestion Alert System (CSRNet)
+CrowdSense
 
 A crowd counting and congestion alert system using a pre-trained **CSRNet model**. Users can upload images via a **React frontend**, and the **Flask backend** processes them to display:
 
